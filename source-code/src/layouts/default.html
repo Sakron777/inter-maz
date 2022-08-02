@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {{> head }}
+</head>
+<body>
+
+    {{> sprite }}
+
+
+
+<div class="page" id="page">
+
+   <!--header-->
+
+    {{> header }}
+
+   <!--content-->
+
+
+   <main class="main">
+    <a id="button"></a>
+    {{> body }}
+
+  </main>
+
+   <!--footer-->
+    {{> footer }}
+</div>
+{{>modal-order}}
+{{>modal-bell}}
+{{>modal-basket}}
+{{>modal-availability}}
+
+    <script src="assets/js/app.min.js"></script>
+</body>
+</html>

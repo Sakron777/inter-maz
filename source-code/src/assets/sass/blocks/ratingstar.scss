@@ -1,0 +1,75 @@
+
+.rating {
+    position: relative;
+    font-size: 26px;
+    display: inline-block;
+    cursor: pointer;
+
+
+    &::before{
+        content: "★★★★★";
+        display: block;
+    }
+
+    &--size{
+        font-size: 36px;
+    }
+
+    &--star{
+        padding-right: 30px;
+        @include breakpoint($mobile-56){
+            margin: 0 auto;
+            padding-right: 0;
+
+         }
+    }
+
+}
+
+.rating__items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+
+
+.rating__item {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: visible;
+}
+
+.rating__item:checked,
+.rating__item:checked ~ .rating__item-label {
+    color: $yel;
+}
+
+.rating__item-label {
+    flex:  0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: $grey;
+
+    &::before{
+        content: "★";
+        display: block;
+        transition: all .3s;
+    }
+}
+
+.rating__item-label:hover,
+.rating__item-label:hover ~ .rating__item-label,
+.rating__item-label:checked ~ .rating__item-label:hover{
+    color: $black;
+}
+

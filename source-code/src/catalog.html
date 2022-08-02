@@ -1,0 +1,953 @@
+---
+layout: default
+title: catalog
+---
+
+<section class="catalog">
+    <div class="container">
+        <h1 class="catalog__title">Разделочные ножи</h1>
+        <div class="catalog__flex">
+            <nav class="breadcrumbs">
+                <ul class="breadcrums__list">
+                    <li class="breadcrums__item">
+                        <a href="index.html" class="breadcrums__link">Главная</a>
+                    </li>
+                    <li class="breadcrums__item">
+                        <span class="breadcrums__current">Разделочные ножи</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <select name="form[]" id="" class="selected">
+                <option class="select__option" value="1" selected>По популярности</option>
+                <option value="2">По цене</option>
+                <option value="3">По названию</option>
+                <option value="4">По цене</option>
+            </select>
+
+        </div>
+
+        <div class="catalog__body">
+            <div class="catalog__filter" id="filt">
+                <div class="catalog__filter-title">Фильтр товаров</div>
+                <div class="catalog__filter-flex ">
+                    <dt class="catalog__filter-price">
+                        <h1>Цена</h1>
+                    </dt>
+                    <div class="catalog__filter-body">
+                        <div class="filter-inputs">
+
+                            <input id="start" class="filter-inputs-start" autocomplete="off" type="text" name="form[]"
+                                value="5000">
+
+                            <input id="end" class="filter-inputs-max" autocomplete="off" type="text" name="form[]"
+                                value="50000">
+                        </div>
+                        <div class="filter-range"></div>
+                    </div>
+                </div>
+
+                <div class="catalog__filter-flex ">
+
+                    <dt class="catalog__filter-blogs">
+                        Производство
+                    </dt>
+
+                    <div class="catalog__filter-body" style="display: none ;">
+                        <div class="catalog__filter-mt30px">
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_1"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_1"><span class="input__text">Булат Сергея Баранова
+                                    </span><small>(25)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_2"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_2"><span class="input__text">Булат Умерова
+                                    </span><small>(265)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_3"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_3"><span class="input__text">ЗЗОСС
+                                    </span><small>(18)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_4"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_4"><span class="input__text">ЗИК
+                                    </span><small>(170)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_5"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_5"><span class="input__text">ЗЛАТКО
+                                    </span><small>(170)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_6"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_6"><span class="input__text">ЗлатПрофит
+                                    </span><small>(170)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_7"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_7"><span class="input__text">ЗОК
+                                    </span><small>(25)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_8"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_8"><span class="input__text">НБК
+                                    </span><small>(250)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_9"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_9"><span class="input__text">НИКОН
+                                    </span><small>(170)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_10"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_10"><span class="input__text">Оружейник
+                                    </span><small>(18)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_11"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_11"><span class="input__text">РОСоружие
+                                    </span><small>(34)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_12"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_12"><span class="input__text">СТИЛЬ-М
+                                    </span><small>(16)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_13"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_13"><span class="input__text">АиР
+                                    </span><small>(250)</small></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__filter-flex ">
+
+                    <dt class="catalog__filter-blogs">
+                        Сталь
+                    </dt>
+
+                    <div class="catalog__filter-body" style="display: none ;">
+                        <div class="catalog__filter-mt30px">
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_14"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_14"><span class="input__text">100Х13М
+                                    </span><small>(130)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_15"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_15"><span class="input__text">110Х18М-ШД
+                                    </span><small>(25)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_16"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_16"><span class="input__text">40Х10С2М (ЭИ-107)
+                                    </span><small>(118)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_17"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_17"><span class="input__text">50Х14МФ
+                                    </span><small>(17)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_18"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_18"><span class="input__text">95Х18
+                                    </span><small>(11)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_19"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_19"><span class="input__text">AUS-8
+                                    </span><small>(170)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_20"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_20"><span class="input__text">ELMAX
+                                    </span><small>(125)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_21"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_21"><span class="input__text">RWL-34
+                                    </span><small>(25)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_22"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_22"><span class="input__text">Дамаск
+                                    </span><small>(180)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_23"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_23"><span class="input__text">К340
+                                    </span><small>(118)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_24"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_24"><span class="input__text">Литой булат
+                                    </span><small>(134)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_25"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_25"><span class="input__text">М390
+                                    </span><small>(161)</small></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__filter-flex ">
+
+                    <dt class="catalog__filter-blogs">
+                        Рукоять
+                    </dt>
+
+                    <div class="catalog__filter-body" style="display: none ;">
+                        <div class="catalog__filter-mt30px">
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_26"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_26"><span class="input__text">Mercorne
+                                    </span><small>(25)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_27"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_27"><span class="input__text">Березовый кап
+                                    </span><small>(265)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_28"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_28"><span class="input__text">Бубинго
+                                    </span><small>(18)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_29"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_29"><span class="input__text">Граб
+                                    </span><small>(170)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_30"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_30"><span class="input__text">Дуб
+                                    </span><small>(170)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_31"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_31"><span class="input__text">Кап
+                                    </span><small>(170)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_32"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_32"><span class="input__text">Комбинированная
+                                    </span><small>(25)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_33"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_33"><span class="input__text">Каштан
+                                    </span><small>(250)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_34"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_34"><span class="input__text">НКвартопрен
+                                    </span><small>(170)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_35"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_35"><span class="input__text">Кожа-Металл
+                                    </span><small>(18)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_36"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_36"><span class="input__text">Комбинированная
+                                    </span><small>(34)</small></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__filter-flex ">
+
+                    <dt class="catalog__filter-blogs">
+                        Гарда и тыльник
+                    </dt>
+
+                    <div class="catalog__filter-body" style="display: none ;">
+                        <div class="catalog__filter-mt30px">
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_37"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_37"><span class="input__text">Алюминий
+                                    </span><small>(25)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_38"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_38"><span class="input__text">Латунь
+                                    </span><small>(265)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_39"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_39"><span class="input__text">Литой Барс
+                                    </span><small>(18)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_40"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_40"><span class="input__text">Литой Пума
+                                    </span><small>(170)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_41"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_41"><span class="input__text">Литье
+                                    </span><small>(170)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_42"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_42"><span class="input__text">Металлический
+                                    </span><small>(170)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_43"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_43"><span class="input__text">Нержавеющая сталь
+                                    </span><small>(25)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_44"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_44"><span class="input__text">Текстолит
+                                    </span><small>(250)</small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_45"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_45"><span class="input__text">Комбинированная
+                                    </span><small>(170)</small></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__filter-flex ">
+
+                    <dt class="catalog__filter-blogs">
+                        Золочение
+                    </dt>
+
+                    <div class="catalog__filter-body" style="display: none ;">
+                        <div class="catalog__filter-mt30px">
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_46"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_46"><span class="input__text">Золочение клинка
+                                    </span><small></small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_47"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_47"><span class="input__text">Золочение рисунка на
+                                        клинке </span><small></small></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__filter-flex ">
+
+                    <dt class="catalog__filter-blogs">
+                        Общая длина, мм
+                    </dt>
+
+                    <div class="catalog__filter-body" style="display: none ;">
+                        <div class="catalog__filter-mt30px">
+                            <div class="filter-inputs">
+
+                                <input id="start2" class="filter-inputs-start" autocomplete="off" type="text"
+                                    name="form[]" value="238">
+
+                                <input id="end2" class="filter-inputs-max" autocomplete="off" type="text" name="form[]"
+                                    value="269">
+                            </div>
+                            <div class="filter-general"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__filter-flex ">
+
+                    <dt class="catalog__filter-blogs">
+                        Длина клинка, мм
+                    </dt>
+
+                    <div class="catalog__filter-body" style="display: none ;">
+                        <div class="catalog__filter-mt30px">
+                            <div class="filter-inputs">
+
+                                <input id="lmin" class="filter-inputs-start" autocomplete="off" type="text"
+                                    name="form[]" value="120">
+
+                                <input id="lmax" class="filter-inputs-max" autocomplete="off" type="text" name="form[]"
+                                    value="152">
+                            </div>
+                            <div class="filter-length"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__filter-flex ">
+
+                    <dt class="catalog__filter-blogs">
+                        Ширина клинка, мм
+                    </dt>
+
+                    <div class="catalog__filter-body" style="display: none ;">
+                        <div class="catalog__filter-mt30px">
+                            <div class="filter-inputs">
+
+                                <input id="wmin" class="filter-inputs-start" autocomplete="off" type="text"
+                                    name="form[]" value="18">
+
+                                <input id="wmax" class="filter-inputs-max" autocomplete="off" type="text" name="form[]"
+                                    value="23">
+                            </div>
+                            <div class="filter-weidth"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__filter-flex ">
+
+                    <dt class="catalog__filter-blogs">
+                        Рейтинг
+                    </dt>
+
+                    <div class="catalog__filter-body" style="display: none ;">
+                        <div class="catalog__filter-mt30px">
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_48"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_48"><span class="input__text">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        5/5 </span><small></small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_49"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_49"><span class="input__text">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        4/5 </span><small></small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_50"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_50"><span class="input__text">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        3/5 </span><small></small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_51"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_51"><span class="input__text">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        2/5 </span><small></small></label>
+                            </div>
+
+                            <div class="filter-checkbox">
+                                <input class="input__checkbox" type="checkbox" name="form[]" id="c_52"
+                                    data-error="ошибка" value="1">
+
+                                <label class="input__label" for="c_52"><span class="input__text">
+                                        <img src="assets/img/rating/1.webp" alt="">
+                                        1/5 </span><small></small></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__product">
+
+                <div class="novelty__right-inner novelty__right-item--catalog">
+                    <div class="novelty__right-item">
+                        <div class="novelty__discount">-50%</div>
+                        <a class="saleshits__top-img" href="product.html">
+                            <img class="saleshits__item-photo" src="assets/img/tovar/1.webp" alt="">
+                        </a>
+                        <a class="saleshits__item-product" href="product.html">Нож Лиса </a>
+                        <div class="saleshits__body-flex">
+                            <div class="saleshits__body-sizes">95х18</div>
+                            <div class="saleshits__body-color">Орех, Алюминий</div>
+                        </div>
+                        <div class="saleshits__body-flex saleshits__body-flex--30px">
+                            <div class="rating">
+                                <form action="#" class="rating__items">
+                                    <input type="radio" class="rating__item" value="5" name="rating">
+                                    <input type="radio" class="rating__item" value="4" checked name="rating">
+                                    <input type="radio" class="rating__item" value="3" name="rating">
+                                    <input type="radio" class="rating__item" value="2" name="rating">
+                                    <input type="radio" class="rating__item" value="1" name="rating">
+                                </form>
+                            </div>
+                            <div class="saleshits__body-reviews">12 отзывов</div>
+                        </div>
+
+                        <div class="saleshits__body-flex">
+                            <div class="saleshits__body-price saleshits__body-price--stocks">
+                                <div class="saleshits__body-stocks">
+                                    3 719 р.
+                                </div>
+                                1 719 р.
+                            </div>
+                            <div class="saleshits__body-scales saleshits__body-flex--26px">
+                                <div class="tool2">
+                                    <a class="saleshits__body-height" href="">
+                                        <img class="saleshits__body-like" src="assets/img/tovar/3.svg" alt="">
+                                        <span class="toolt2">В закладки</span>
+                                    </a>
+                                </div>
+
+                                <div class="tool2">
+                                    <a class="saleshits__body-height" href="">
+                                        <img class="saleshits__body-compare" src="assets/img/tovar/2.svg" alt="">
+                                        <span class="toolt2">В сравнение</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="novelty__right-inner novelty__right-item--catalog">
+                    <div class="novelty__right-item">
+                        <div class="novelty__discount">-50%</div>
+                        <a class="saleshits__top-img" href="product.html">
+                            <img class="saleshits__item-photo" src="assets/img/tovar/1.webp" alt="">
+                        </a>
+                        <a class="saleshits__item-product" href="product.html">Нож Лиса </a>
+                        <div class="saleshits__body-flex">
+                            <div class="saleshits__body-sizes">95х18</div>
+                            <div class="saleshits__body-color">Орех, Алюминий</div>
+                        </div>
+                        <div class="saleshits__body-flex saleshits__body-flex--30px">
+                            <div class="rating">
+                                <form action="#" class="rating__items">
+                                    <input type="radio" class="rating__item" value="5" name="rating">
+                                    <input type="radio" class="rating__item" value="4" checked name="rating">
+                                    <input type="radio" class="rating__item" value="3" name="rating">
+                                    <input type="radio" class="rating__item" value="2" name="rating">
+                                    <input type="radio" class="rating__item" value="1" name="rating">
+                                </form>
+                            </div>
+                            <div class="saleshits__body-reviews">12 отзывов</div>
+                        </div>
+
+                        <div class="saleshits__body-flex">
+                            <div class="saleshits__body-price saleshits__body-price--stocks">
+                                <div class="saleshits__body-stocks">
+                                    3 719 р.
+                                </div>
+                                1 719 р.
+                            </div>
+                            <div class="saleshits__body-scales saleshits__body-flex--26px">
+                                <div class="tool2">
+                                    <a class="saleshits__body-height" href="">
+                                        <img class="saleshits__body-like" src="assets/img/tovar/3.svg" alt="">
+                                        <span class="toolt2">В закладки</span>
+                                    </a>
+                                </div>
+
+                                <div class="tool2">
+                                    <a class="saleshits__body-height" href="">
+                                        <img class="saleshits__body-compare" src="assets/img/tovar/2.svg" alt="">
+                                        <span class="toolt2">В сравнение</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="novelty__right-inner novelty__right-item--catalog">
+                    <div class="novelty__right-item">
+                        <div class="novelty__discount">-50%</div>
+                        <a class="saleshits__top-img" href="product.html">
+                            <img class="saleshits__item-photo" src="assets/img/tovar/1.webp" alt="">
+                        </a>
+                        <a class="saleshits__item-product" href="product.html">Нож Лиса </a>
+                        <div class="saleshits__body-flex">
+                            <div class="saleshits__body-sizes">95х18</div>
+                            <div class="saleshits__body-color">Орех, Алюминий</div>
+                        </div>
+                        <div class="saleshits__body-flex saleshits__body-flex--30px">
+                            <div class="rating">
+                                <form action="#" class="rating__items">
+                                    <input type="radio" class="rating__item" value="5" name="rating">
+                                    <input type="radio" class="rating__item" value="4" checked name="rating">
+                                    <input type="radio" class="rating__item" value="3" name="rating">
+                                    <input type="radio" class="rating__item" value="2" name="rating">
+                                    <input type="radio" class="rating__item" value="1" name="rating">
+                                </form>
+                            </div>
+                            <div class="saleshits__body-reviews">12 отзывов</div>
+                        </div>
+
+                        <div class="saleshits__body-flex">
+                            <div class="saleshits__body-price saleshits__body-price--stocks">
+                                <div class="saleshits__body-stocks">
+                                    3 719 р.
+                                </div>
+                                1 719 р.
+                            </div>
+                            <div class="saleshits__body-scales saleshits__body-flex--26px">
+                                <div class="tool2">
+                                    <a class="saleshits__body-height" href="">
+                                        <img class="saleshits__body-like" src="assets/img/tovar/3.svg" alt="">
+                                        <span class="toolt2">В закладки</span>
+                                    </a>
+                                </div>
+
+                                <div class="tool2">
+                                    <a class="saleshits__body-height" href="">
+                                        <img class="saleshits__body-compare" src="assets/img/tovar/2.svg" alt="">
+                                        <span class="toolt2">В сравнение</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="novelty__right-inner novelty__right-item--catalog">
+                    <div class="novelty__right-item">
+                        <div class="novelty__discount">-50%</div>
+                        <a class="saleshits__top-img" href="product.html">
+                            <img class="saleshits__item-photo" src="assets/img/tovar/1.webp" alt="">
+                        </a>
+                        <a class="saleshits__item-product" href="product.html">Нож Лиса </a>
+                        <div class="saleshits__body-flex">
+                            <div class="saleshits__body-sizes">95х18</div>
+                            <div class="saleshits__body-color">Орех, Алюминий</div>
+                        </div>
+                        <div class="saleshits__body-flex saleshits__body-flex--30px">
+                            <div class="rating">
+                                <form action="#" class="rating__items">
+                                    <input type="radio" class="rating__item" value="5" name="rating">
+                                    <input type="radio" class="rating__item" value="4" checked name="rating">
+                                    <input type="radio" class="rating__item" value="3" name="rating">
+                                    <input type="radio" class="rating__item" value="2" name="rating">
+                                    <input type="radio" class="rating__item" value="1" name="rating">
+                                </form>
+                            </div>
+                            <div class="saleshits__body-reviews">12 отзывов</div>
+                        </div>
+
+                        <div class="saleshits__body-flex">
+                            <div class="saleshits__body-price saleshits__body-price--stocks">
+                                <div class="saleshits__body-stocks">
+                                    3 719 р.
+                                </div>
+                                1 719 р.
+                            </div>
+                            <div class="saleshits__body-scales saleshits__body-flex--26px">
+                                <div class="tool2">
+                                    <a class="saleshits__body-height" href="">
+                                        <img class="saleshits__body-like" src="assets/img/tovar/3.svg" alt="">
+                                        <span class="toolt2">В закладки</span>
+                                    </a>
+                                </div>
+
+                                <div class="tool2">
+                                    <a class="saleshits__body-height" href="">
+                                        <img class="saleshits__body-compare" src="assets/img/tovar/2.svg" alt="">
+                                        <span class="toolt2">В сравнение</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="novelty__right-inner novelty__right-item--catalog">
+                    <div class="novelty__right-item">
+                        <div class="novelty__discount">-50%</div>
+                        <a class="saleshits__top-img" href="product.html">
+                            <img class="saleshits__item-photo" src="assets/img/tovar/1.webp" alt="">
+                        </a>
+                        <a class="saleshits__item-product" href="product.html">Нож Лиса </a>
+                        <div class="saleshits__body-flex">
+                            <div class="saleshits__body-sizes">95х18</div>
+                            <div class="saleshits__body-color">Орех, Алюминий</div>
+                        </div>
+                        <div class="saleshits__body-flex saleshits__body-flex--30px">
+                            <div class="rating">
+                                <form action="#" class="rating__items">
+                                    <input type="radio" class="rating__item" value="5" name="rating">
+                                    <input type="radio" class="rating__item" value="4" checked name="rating">
+                                    <input type="radio" class="rating__item" value="3" name="rating">
+                                    <input type="radio" class="rating__item" value="2" name="rating">
+                                    <input type="radio" class="rating__item" value="1" name="rating">
+                                </form>
+                            </div>
+                            <div class="saleshits__body-reviews">12 отзывов</div>
+                        </div>
+
+                        <div class="saleshits__body-flex">
+                            <div class="saleshits__body-price saleshits__body-price--stocks">
+                                <div class="saleshits__body-stocks">
+                                    3 719 р.
+                                </div>
+                                1 719 р.
+                            </div>
+                            <div class="saleshits__body-scales saleshits__body-flex--26px">
+                                <div class="tool2">
+                                    <a class="saleshits__body-height" href="">
+                                        <img class="saleshits__body-like" src="assets/img/tovar/3.svg" alt="">
+                                        <span class="toolt2">В закладки</span>
+                                    </a>
+                                </div>
+
+                                <div class="tool2">
+                                    <a class="saleshits__body-height" href="">
+                                        <img class="saleshits__body-compare" src="assets/img/tovar/2.svg" alt="">
+                                        <span class="toolt2">В сравнение</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="novelty__right-inner novelty__right-item--catalog">
+                    <div class="novelty__right-item">
+                        <div class="novelty__discount">-50%</div>
+                        <a class="saleshits__top-img" href="product.html">
+                            <img class="saleshits__item-photo" src="assets/img/tovar/1.webp" alt="">
+                        </a>
+                        <a class="saleshits__item-product" href="product.html">Нож Лиса </a>
+                        <div class="saleshits__body-flex">
+                            <div class="saleshits__body-sizes">95х18</div>
+                            <div class="saleshits__body-color">Орех, Алюминий</div>
+                        </div>
+                        <div class="saleshits__body-flex saleshits__body-flex--30px">
+                            <div class="rating">
+                                <form action="#" class="rating__items">
+                                    <input type="radio" class="rating__item" value="5" name="rating">
+                                    <input type="radio" class="rating__item" value="4" checked name="rating">
+                                    <input type="radio" class="rating__item" value="3" name="rating">
+                                    <input type="radio" class="rating__item" value="2" name="rating">
+                                    <input type="radio" class="rating__item" value="1" name="rating">
+                                </form>
+                            </div>
+                            <div class="saleshits__body-reviews">12 отзывов</div>
+                        </div>
+
+                        <div class="saleshits__body-flex">
+                            <div class="saleshits__body-price saleshits__body-price--stocks">
+                                <div class="saleshits__body-stocks">
+                                    3 719 р.
+                                </div>
+                                1 719 р.
+                            </div>
+                            <div class="saleshits__body-scales saleshits__body-flex--26px">
+                                <div class="tool2">
+                                    <a class="saleshits__body-height" href="">
+                                        <img class="saleshits__body-like" src="assets/img/tovar/3.svg" alt="">
+                                        <span class="toolt2">В закладки</span>
+                                    </a>
+                                </div>
+
+                                <div class="tool2">
+                                    <a class="saleshits__body-height" href="">
+                                        <img class="saleshits__body-compare" src="assets/img/tovar/2.svg" alt="">
+                                        <span class="toolt2">В сравнение</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__footer">
+
+                    <button class="btn-catalog__more btn" type="button">Показать больше</button>
+                    <div class="pagging">
+                        <button disabled class="pagging__arrow-left" type="button"></button>
+                        <ul class="pagging-list">
+                            <li class="pagging-item">
+                                <a href="" class="pagging__link _active">1</a>
+                            </li>
+                            <li class="pagging-item">
+                                <a href="" class="pagging__link">2</a>
+                            </li>
+                            <li class="pagging-item">
+                                <a href="" class="pagging__link">3</a>
+                            </li>
+                            <li class="pagging-item">
+                                <a href="" class="pagging__link">...</a>
+                            </li>
+                            <li class="pagging-item">
+                                <a href="" class="pagging__link">15</a>
+                            </li>
+                        </ul>
+                        <button class="pagging__arrow-right" type="button"></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="catalog-mobile__filter">
+
+            <button class="open-filter " type="button" id="filterToggle">
+                <img src="assets/img/rating/2.webp" alt="">
+                <span></span>
+            </button>
+        </div>
+
+    </div>
+</section>
+
+
+
+

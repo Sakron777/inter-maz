@@ -1,0 +1,137 @@
+.novelty {
+    width: 100%;
+    height:100%;
+    min-height: 761px;
+
+    background: url(/assets/img/newblog/1.webp) center no-repeat ;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.novelty__flex{
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint($tablet-620){
+        display: block;
+    }
+
+}
+
+
+.novelty__left {
+    width: 100%;
+    margin-top: 40px;
+    max-width: 384px;
+    margin-right: 15px;
+
+    @include breakpoint($tablet-620){
+        max-width: 100%;
+    }
+
+}
+
+.novelty__left-title {
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 46px;
+
+    letter-spacing: 0.05em;
+
+    color: $white;
+
+    @include breakpoint($tablet-620){
+        padding-top: 40px;
+    }
+}
+
+.novelty__left-text {
+    margin-bottom: 60px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.novelty__left-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 46px;
+
+    letter-spacing: 0.05em;
+
+    color: $yel;
+}
+
+.novelty__right {
+    width: 100%;
+    margin-top: 40px;
+    max-width: 1205px;
+    position: relative;
+
+    @include breakpoint($tablet-620){
+        margin: 0 auto;
+    }
+
+    @include breakpoint($tablet-254){
+        max-width: 787px;
+    }
+
+}
+
+.novelty__right-inner {
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px 15px 10px;
+}
+
+.novelty__right-item {
+    width: 100%;
+
+    max-width: 336px;
+    padding: 0 20px 29px 20px;
+
+    box-shadow: $blog2;
+    background-color: $white;
+    transition: all .3s;
+    position: relative;
+
+    &:hover{
+        box-shadow: $blog1;
+        transform: scale(1.02);
+    }
+
+    .novelty__discount{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 6px 22px;
+
+        background-color: $yel;
+        color: $white;
+
+        position: absolute;
+        top: 20px;
+        left: 0;
+
+    }
+
+    &--catalog{
+    height: 100%;
+
+
+    }
+
+}

@@ -1,0 +1,959 @@
+
+.header {
+    background-color: $heatitle;
+    color: $white;
+
+}
+
+/////header top
+
+.header__top {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint($tablet-bp){
+        display: none;
+
+     }
+
+}
+
+
+
+.header-top__menu {
+    padding: 25px 0;
+}
+
+.header-mobile__menu.active{
+    display: block;
+}
+
+.header-top-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-top__link{
+    &--60px{
+        margin-right: 60px;
+    }
+}
+
+
+
+.header-top__list {
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+
+
+    &--mob{
+     width: 100%;
+     margin-right: 30px;
+     margin-bottom: 15px;
+     padding-bottom: 20px;
+     border-bottom: $bordermob 1px solid;
+
+     &:first-child{
+        margin-top: 10px;
+     }
+
+    }
+
+       &--nolinear{
+        margin-bottom: 5x;
+        padding-bottom: 8px;
+        border: 0;
+
+    }
+
+    &--left20px{
+        margin-left: 30px;
+        position: relative;
+        font-size: 11px;
+        &::before{
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: $yel;
+            border-radius: 50%;
+
+            position: absolute;
+            left: -25px;
+            top: 6px;
+        }
+
+    }
+}
+
+//СПОЙЛЕР БУПГЕР
+
+.header-mobile-items{
+    display: none ;
+}
+
+.header-top__spoller{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 14px 10px;
+    margin-bottom: 1px;
+
+    color: $white;
+
+    background-color: $heatitle;
+
+    cursor: pointer;
+    position: relative;
+
+    &.header-top__spoller::before,
+    &.header-top__spoller::after{
+    content: "";
+    width: 10px;
+    height: 3px;
+    background-color: $yel;
+
+    position: absolute;
+    top: 27px;
+    transition: all .3s;
+
+}
+    border-bottom: $bordermob 1px solid;
+   &:active{
+       border-bottom: 1px $yel solid;
+   }
+
+}
+
+.header-top__spoller.active::before{
+    transform: rotate(-40deg);
+}
+
+.header-top__spoller.active::after{
+    transform: rotate(40deg);
+}
+
+
+.header-top__spoller::before{
+    transform: rotate(40deg);
+    right: 0px;
+}
+
+.header-top__spoller::after{
+    transform: rotate(-40deg);
+    right: 7px;
+}
+
+
+
+.header-mobile__next{
+    transform: rotate(270deg);
+    position: absolute;
+    top: 6px;
+    right: 0;
+    z-index: 1;
+}
+
+.header-top__right {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.header-top__user {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+.header-top__img {
+    width: 22px;
+    height: 27px;
+
+    position: absolute;
+    top: -5px;
+    left: -35px;
+    z-index: 1;
+
+
+    @include breakpoint($tablet-bp){
+        top: 25px;
+
+     }
+}
+
+.header-top__tops{
+    padding-top: 15px;
+}
+
+
+/////header mobile///////////////////////////////////////////////////
+
+.header_mobile{
+    display: none;
+    @include breakpoint($tablet-bp){
+       display: block;
+
+     }
+
+}
+
+.header__mobile__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 10000;
+
+}
+
+
+
+.header-mobile__menu {
+    padding: 25px 0;
+
+}
+
+
+.header-mobile-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding-left: 15px;
+
+}
+
+.header-mobile-items{
+    width: 95%;
+
+
+    background-color: $heatitle;
+    margin-top: 25px;
+
+
+
+    //position: absolute;
+    //top: 46px;
+    //left: 0;
+   // z-index: 20;
+
+
+
+}
+
+.header-mobile__list {
+    margin-right: 60px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 22px;
+
+
+
+    @include breakpoint($mobile-br){
+        margin-right: 20px;
+
+      }
+}
+
+.header-mobile__link{
+
+    &--nonenum{
+        @include breakpoint($mobile-56){
+            display: none;
+
+          }
+    }
+
+}
+
+.header-mobile__phone{
+
+    @include breakpoint($tablet-bp){
+        display: none;
+
+      }
+
+      @include breakpoint($mobile-56){
+        display: block;
+
+      }
+}
+
+
+
+.header-mobile__right {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-mobile__user {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+.header-mobile__img {
+    width: 22px;
+    height: 27px;
+
+    position: absolute;
+    top: -5px;
+    left: -35px;
+    z-index: 1;
+
+    @include breakpoint($tablet-bp){
+        top: 25px;
+
+     }
+}
+
+.header-mobile__tops{
+    padding-top: 15px;
+
+    background-color: $yel;
+    width: 91px;
+    height: 72px;
+    position: relative;
+    z-index: 10000;
+
+}
+
+.header-mobile__basket{
+    position: relative;
+
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 10px;
+
+        color: #FFFFFF;
+        padding: 3px 7px;
+
+        background: $yel;
+        border-radius: 50%;
+
+        position: absolute;
+
+        top: 0;
+        right: -5px;
+        z-index: 1;
+        transition: all .3s;
+
+        &:hover{
+            transform: scale(2.1);
+        }
+        }
+}
+
+
+.header-mobile__arrow{
+    display: inline-block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+
+
+    margin-right: -11px;
+
+    border: 0;
+    background-color: $heatitle;
+
+    position: absolute;
+    top: -4px;
+    right:  6px;
+    z-index: 1;
+
+    transition: all .3s;
+
+}
+
+//стрелка
+.header-mobile__arrow.active {
+    transform: rotate(180deg);
+
+}
+
+
+
+
+
+//header-body//////////////////////////////////////////////////////////////////////
+
+.header__body {
+
+    padding: 24px 0;
+    background-color: #ecf1f2;
+    position: relative;
+    z-index: 10000;
+
+
+}
+
+.header-body-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @include breakpoint($tablet-bp){
+        display: block;
+     }
+}
+
+.header-body__left {
+    display: flex;
+    @include breakpoint($tablet-bp){
+        flex-direction: column;
+     }
+
+}
+
+.header-bode__logo {
+    margin-right: 158px;
+
+    @include breakpoint($tablet-254){
+        margin-right: 20px;
+    }
+
+    @include breakpoint($tablet-bp){
+        padding-bottom: 20px;
+        margin: 0 auto;
+     }
+
+}
+
+.header-body__search {
+
+    resize: 0;
+    position: relative;
+    z-index: 2;
+
+    @include breakpoint($tablet-bp){
+        max-width: 100%;
+     }
+}
+
+.search__input {
+    width: 100%;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   padding: 12px 0 12px 42px;
+
+   background: rgba(7, 7, 7, 0.03);
+   border-radius: 3px;
+   border: 1px solid rgba(4, 4, 4, 0.5);
+   resize: none;
+   outline: 0;
+
+   &::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+    @include breakpoint($tablet-bp){
+        color: $black;
+     }
+
+   }
+
+   @include breakpoint($tablet-bp){
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 12px 0 12px 10px;
+
+    background-color: $white;
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+ }
+}
+
+.header-body__navigat{
+
+    position: absolute;
+    top: 32%;
+    left: 26px;
+
+    z-index: 1;
+
+    @include breakpoint($tablet-bp){
+        display: none;
+     }
+
+}
+
+.header-body__navigat7{
+    display: none;
+    @include breakpoint($tablet-bp){
+        display: block;
+        position: absolute;
+        top: 32%;
+        right: 26px;
+
+        z-index: 1;
+     }
+}
+
+
+
+.header-body__right {
+    display: flex;
+    margin-left: 50px;
+    @include breakpoint($tablet-bp){
+        display: none;
+
+     }
+}
+
+.header-body__nav {
+    display: flex;
+    align-items: center;
+    margin-right: 53px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    @include breakpoint($tablet-254){
+        margin-right: 23px;
+    }
+}
+
+.header-body__img {
+   margin: 0 5px;
+
+}
+
+.header-body__phone {
+
+    overflow: visible;
+    margin-right: 30px;
+    list-style: none;
+    position: relative;
+
+}
+
+.header-body__number {
+    display: block;
+    white-space: nowrap;
+
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+
+}
+
+.header-body__arrow{
+    display: inline-block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-right: -11px;
+
+
+    border: 0;
+    background-color: 0;
+
+
+
+    position: absolute;
+    top: -5%;
+    right:  -25px;
+    z-index: 1000;
+
+    transition: all .3s;
+
+}
+
+//стрелка
+.header-body__arrow.active {
+    transform: rotate(180deg);
+}
+
+
+.header-body__list {
+    list-style: none;
+    padding: 5px;
+
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+
+    z-index: 1000000;
+    position: absolute;
+}
+
+.header-body__btn{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+
+    color: $yel;
+    border: 0;
+    background-color: none;
+
+}
+
+
+
+.header-body__like{
+    display: flex;
+    align-items: center;
+}
+
+.header-body__blank{
+    display: flex;
+    align-items: center;
+}
+
+.header-body__favourites {
+    margin: 0 30px;
+
+    @include breakpoint($tablet-254){
+        margin: 0 10px;
+    }
+}
+
+
+
+.header-body__basket {
+    position: relative;
+
+
+    span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+
+    color: #FFFFFF;
+    padding: 3px 7px;
+
+    background: $yel;
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 0;
+    right: -5px;
+    z-index: 1;
+    transition: all .3s;
+
+    &:hover{
+        transform: scale(2.1);
+    }
+    }
+}
+
+.header-body__rub {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 15px;
+
+    color: $yel;
+
+    @include breakpoint($tablet-254){
+        display: none;
+    }
+}
+
+.header-body__money {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: black;
+}
+
+
+
+
+
+//header catalog.........................................................................
+
+
+
+.header__catalog{
+    width: 100%;
+
+    position: sticky;
+    z-index: 100;
+    padding: 24px 0;
+    background-color: $heatitle;
+
+
+    @include breakpoint($tablet-bp){
+        display: none;
+     }
+
+}
+
+.header__catalog.fixedd{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+    padding: 24px 0;
+    background-color: $heatitle;
+
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+
+
+}
+
+.header__catalog-menu {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__catalog-list {
+    margin-left: 5px;
+
+}
+
+
+.header__catalog-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: $white;
+    position: relative;
+
+    transition: all .3s;
+
+    @include breakpoint($tablet-523){
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+// активация подсветки с чертой
+.header__catalog-link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+
+
+    position: absolute;
+    bottom: -23px;
+    left: 0;
+    height: 1px;
+
+    background-color: $yel;
+
+    transition: opacity .1s linear;
+ }
+
+
+ .header__catalog-link:hover{
+     color: $yel;
+     text-decoration: none;
+ }
+
+ .header__catalog-link:hover:after,
+ .header__catalog-link.active:after{
+     opacity: 1;
+  }
+
+ .header__catalog-link.active{
+     color: $yel;
+  }
+
+
+
+
+
+
+//категория ножей
+
+.header__catalog-blo{
+    display: none;
+
+}
+
+
+.header__catalog-submenu {
+    display: flex;
+
+    position: relative;
+    &::before{
+        content: "";
+        width: 93%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.3);
+
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+
+        z-index: 1;
+    }
+
+    &::after{
+        content: "";
+        width: 93%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.3);
+
+        position: absolute;
+        top: 110px;
+        left: 0;
+
+        z-index: 1;
+    }
+
+
+}
+
+.header__catalog-item {
+    margin-right: 100px;
+    display: flex;
+
+    justify-content: space-between;
+     //необходимо для прижатия Смотреть все
+
+    transition: 3s all;
+    animation: showBloc 1s linear forwards;
+
+    &:last-child{
+        margin-right: 0px;
+    }
+
+    @include breakpoint($tablet-523){
+        margin-right: 80px;
+    }
+
+}
+
+@keyframes showBloc {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+
+.header__catalog-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+
+
+}
+
+
+.header__catalog-category {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 54px 0;
+    color: $white;
+
+    @include breakpoint($tablet-523){
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+}
+
+.header__catalog-listing {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    flex: 1 1 auto;
+
+}
+
+.header__catalog-blade {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: $white;
+    @include breakpoint($tablet-523){
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    @include breakpoint($tablet-155){
+        margin-top: 10px;
+    }
+}
+
+.header__catalog-linear{
+    margin: 30px 0;
+}
+
+.header__catalog-all {
+    align-self: flex-start;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #E8AA31;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

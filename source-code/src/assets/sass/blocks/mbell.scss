@@ -1,0 +1,75 @@
+.modal__bell {
+    text-align: center;
+    padding: 30px;
+
+
+}
+
+.modal__bell-flex{
+    display: flex;
+    align-items: center;
+    @include breakpoint($mobile-56){
+        display: block;
+    }
+
+
+}
+
+.modal__bell-text{
+    padding: 30px;
+
+    @include breakpoint($mobile-56){
+        text-align: center;
+    }
+}
+
+.modal__bell-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.modal__bell-img {
+    margin-bottom: 20px;
+    @include breakpoint($mobile-56){
+        margin: 0 auto 20px auto;
+    }
+}
+
+.modal__bell-group {
+    margin-bottom: 10px;
+}
+
+.modal__bell-icon {
+
+}
+
+.modal__bell-input {
+    width: 90%;
+    border: 1px solid rgba(20, 20, 20, 0.15);
+    outline: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 10px;
+    color: $heatitle;
+}
+
+.modal__bell-control {
+    width: 90%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+    border: 1px solid rgba(20, 20, 20, 0.15);
+    outline: none;
+    padding: 10px;
+}
+
+.modal__bell-control::placeholder{
+    color: rgb(36, 18, 18);
+
+ }

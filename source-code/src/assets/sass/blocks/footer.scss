@@ -1,0 +1,343 @@
+.footer {
+    background-color: $heatitle;
+
+}
+
+.footer__top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 331px;
+
+    background: url(/assets/img/footer/9.webp) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.footer__top-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 46px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+
+    letter-spacing: 0.05em;
+
+    color: $yel;
+
+    @include breakpoint($tablet-bp){
+        font-size: 24px;
+
+     }
+}
+
+.footer__top-text {
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 60px;
+    padding: 0 5px;
+
+    letter-spacing: 0.03em;
+
+    color: $white;
+
+}
+
+
+.footer__main {
+    margin-top: 54px;
+
+}
+
+.footer__main-inner {
+    display: flex;
+
+
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 32px;
+    &:first-child{
+        margin-bottom: 0;
+    }
+
+
+
+
+
+    @include breakpoint($tablet-155){
+        flex-wrap: wrap;
+        text-align: center;
+
+        justify-content: center;
+
+     }
+
+
+}
+
+.footer__main-item {
+    margin-top: 35px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+
+    width: 100%;
+    max-width: 275px;
+
+
+    &--375px{
+        max-width: 375px;
+    }
+
+    &:last-child{
+        margin-right: 0px;
+    }
+
+    @include breakpoint($tablet-530){
+        margin-right: 60px;
+
+     }
+
+    @include breakpoint($tablet-155){
+
+        margin-right: 5px;
+
+     }
+
+
+}
+
+.footer__main-title {
+    padding-bottom: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: $white;
+
+        &--15px{
+        padding-bottom: 15px;
+    }
+}
+
+.footer__main-link {
+
+    padding-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    span{
+        color: $yel;
+    }
+}
+
+.footer__main-flex{
+    display: flex;
+    align-items: center;
+
+
+
+    @include breakpoint($tablet-155){
+        justify-content: center;
+
+     }
+
+     &--conta{
+        text-align: left;
+   }
+
+}
+
+.footer__maim-cont {
+    margin-top: -22px;
+    margin-right: 15px;
+
+    &--2{
+        margin-bottom: 22px;
+    }
+
+    &--3{
+        margin-bottom: 50px;
+    }
+
+    &--4{
+
+    }
+
+}
+
+.footer__main-social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @include breakpoint($tablet-155){
+        justify-content: center;
+
+
+     }
+
+}
+
+.footer__main-socials {
+    margin-right: 20px;
+    transition: all .3s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    @include breakpoint($tablet-155){
+        margin-right: 20px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+     }
+
+}
+
+.footer__main-png {
+
+}
+
+.footer__main-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__main-rules{
+    min-width: 300px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    @include breakpoint($tablet-155){
+        min-width: 0px;
+
+     }
+
+}
+
+.footer__main-checkbox{
+
+}
+
+//СТИЛИЗАЦИЯ ЧЕКБОКСА
+
+.footer__main-rules .footer__main-checkbox {
+    display: none;/* <--скрываем дефолтный чекбокс */
+  }
+  .footer__main-rules span {/* <-- стилизируем новый */
+
+    margin-top: 5px;
+    height: 8px;
+    width: 8px;
+    border: 1px solid gray;
+    display: inline-block;
+    position: relative;
+    background-color:$heatitle;
+    border-radius:2px;
+    padding:3px;
+  }
+  [type=checkbox]:checked + span:before {/* <-- ставим иконку, когда чекбокс включен  */
+    content: '\2714';
+    position: absolute;
+    top: -5px;
+    left: 2px;
+    font-size:14px;
+    color: $yel;
+  }
+
+  .footer__copyright{
+      margin-bottom: 49px;
+  }
+
+.footer__copyright-text {
+    width: 100%;
+    max-width: 817px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__main-form{
+    max-width: 375px;
+    position: relative;
+
+}
+
+.footer__main-email{
+    margin: 25px 0;
+    width: 100%;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: rgba(255, 255, 255, 0.52);
+    padding: 15px 0 15px 20px;
+
+    border: 1px solid  rgba(255, 255, 255, 0.5);
+    border-right: 0;
+    resize: none;
+    outline: 0;
+
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+}
+
+.footer__main-submit{
+    margin-right: 5px;
+    width: 72px;
+    height: 52px;
+    cursor: pointer;
+
+    background: $yel;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 0;
+
+    transition: all .3s;
+
+    &:hover{
+        background-color: #dd9f23;
+    }
+
+}
+
+.footer__main-arrow{
+    position: absolute;
+    top: 43px;
+    right: 30px;
+    z-index: 1;
+    cursor: pointer;
+
+}

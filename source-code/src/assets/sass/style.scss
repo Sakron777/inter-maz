@@ -1,0 +1,101 @@
+@import "vars";
+@import "reset";
+@import "mixins";
+
+html{
+    font-size: 18px;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+form{
+    box-sizing:border-box;
+}
+//form input{
+
+//}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #000;
+    background-color: $white;
+}
+
+
+a{
+
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+
+    &:hover{
+        text-decoration: underline
+    }
+}
+
+
+
+//bootstrap
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/modal";
+
+
+//noslider
+@import "../../../node_modules/nouislider/dist/nouislider";
+
+//slick
+@import "../../../node_modules/slick-carousel/slick/slick";
+
+
+//модал
+@import "blocks/mbell";
+@import "blocks/modal";
+
+
+//bloks 1стр
+@import "blocks/container";
+@import "blocks/main";
+@import "blocks/page";
+@import "blocks/btn";
+@import "blocks/header";
+@import "blocks/burger";
+@import "blocks/helper";
+@import "blocks/intro";
+@import "blocks/info";
+@import "blocks/categories";
+@import "blocks/saleshits";
+@import "blocks/ratingstar";
+@import "blocks/novelty";
+@import "blocks/stocks";
+@import "blocks/articles";
+@import "blocks/lanternsblog";
+@import "blocks/filter";
+
+//bloks 2стр
+@import "blocks/catalog";
+@import "blocks/breadcrumbs";
+@import "blocks/selected";
+@import "blocks/pagging";
+
+//bloks 3стр
+@import "blocks/product";
+@import "blocks/price";
+@import "blocks/tubs";
+
+@import "blocks/footer";
+//vendor
+
+

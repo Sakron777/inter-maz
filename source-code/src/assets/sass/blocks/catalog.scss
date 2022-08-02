@@ -1,0 +1,295 @@
+.catalog {
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+
+.catalog__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint($tablet-bp){
+        display: block;
+       }
+
+}
+
+
+
+.catalog__body{
+    display: flex;
+
+
+
+}
+
+.catalog__filter{
+    width: 375px;
+    height: 100%;
+    background: $fon2;
+    box-shadow: $blog2;
+
+    margin-right: 25px;
+
+    @include breakpoint($tablet-bp){
+
+        width: 270px;
+        overflow: auto;
+
+
+        position: fixed;
+        left: 0;
+        top:0;
+        z-index: 10000;
+
+
+        transform: translateX(-100%);
+        transition: all .3s;
+
+       }
+
+       .show-filter & {
+          transform: translateX(0);
+
+       }
+}
+
+.catalog__filter.active{
+    display: block;
+}
+
+
+
+
+
+.catalog__filter-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 23px 30px;
+
+    color: $white;
+
+    background-color: $heatitle;
+}
+
+
+//СПОЙЛЕР
+
+.catalog__filter-price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: $heatitle;
+    padding: 30px 0 30px 30px;
+    border: 0;
+    background: 0;
+
+    position: relative;
+    cursor: pointer;
+
+
+    &.catalog__filter-price::before,
+    &.catalog__filter-price::after{
+    content: "";
+    width: 10px;
+    height: 3px;
+    background-color: $yel;
+
+    position: absolute;
+    top: 40px;
+    transition: all .3s;
+}
+}
+
+.catalog__filter-price.active::before{
+    transform: rotate(40deg);
+}
+
+.catalog__filter-price.active::after{
+    transform: rotate(-40deg);
+}
+
+
+.catalog__filter-price::before{
+    transform: rotate(-40deg);
+    right: 16px;
+}
+
+.catalog__filter-price::after{
+    transform: rotate(40deg);
+    right: 23px;
+}
+
+.catalog__filter-body{
+    margin-bottom: 60px;
+}
+
+.catalog__filter-mt30px{
+    margin-top: 30px;
+}
+
+
+.catalog__filter-blogs{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 23px 30px;
+    margin-bottom: 1px;
+
+    color: $white;
+
+    background-color: $heatitle;
+
+    cursor: pointer;
+    position: relative;
+
+    &.catalog__filter-blogs::before,
+    &.catalog__filter-blogs::after{
+    content: "";
+    width: 10px;
+    height: 3px;
+    background-color: $yel;
+
+    position: absolute;
+    top: 36px;
+    transition: all .3s;
+}
+}
+
+.catalog__filter-blogs.active::before{
+    transform: rotate(-40deg);
+}
+
+.catalog__filter-blogs.active::after{
+    transform: rotate(40deg);
+}
+
+
+.catalog__filter-blogs::before{
+    transform: rotate(40deg);
+    right: 16px;
+}
+
+.catalog__filter-blogs::after{
+    transform: rotate(-40deg);
+    right: 23px;
+}
+
+
+
+
+
+
+
+.catalog__filter-btn {
+
+
+    display: inline-block;
+
+    background: 0;
+    border: 0;
+
+    color: $heatitle;
+    cursor: pointer;
+    transition: all .3s;
+
+    position: absolute;
+
+    top: 35px;
+    right: 30px;
+    z-index: 1;
+
+    img{
+        width: 100%;
+    }
+
+}
+
+.catalog__filter-btn.active {
+    transform: rotate(180deg);
+
+}
+
+.catalog__filter-img{
+    padding-right: 30px;
+
+}
+
+.catalog__product{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    max-width: 1190px;
+
+}
+
+.catalog__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1190px;
+    margin-top: 20px;
+    margin-left: 8px;
+
+    @include breakpoint($mobile-56){
+        display: block;
+        text-align: center;
+
+       }
+
+}
+
+
+//мобильный фильтр
+
+
+.catalog-mobile__filter{
+
+    display: none;
+
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 100000;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: $yel;
+
+    .open-filter{
+        padding: 0;
+        margin: 0;
+        background: 0;
+        border: 0;
+        position: relative;
+    }
+
+    img{
+        width: 37px;
+        position: absolute;
+        top: -10px;
+        left: 5px;
+    }
+
+    @include breakpoint($tablet-bp){
+        display: block;
+
+       }
+
+}
+
+
+
+
+
+
+

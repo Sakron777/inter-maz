@@ -1,0 +1,210 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 2px 0;
+
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+
+    background-color: $yel;
+    border-radius: $bor3px;
+
+    transition: all .3s;
+
+
+    &:hover{
+        box-shadow: $shadbtn;
+        color: $white;
+    }
+
+
+        &--bottom{
+            max-width: 317px;
+            position: absolute;
+            bottom: 30px;
+
+        }
+
+        &--black{
+            background-color: $heatitle;
+            min-width: 228px;
+
+            @include breakpoint($mobile-32){
+                min-width: 180px;
+
+             }
+        }
+
+        &--pupop{
+            background-color: $nalichie;
+            max-width: 200px;
+            padding: 0 5px;
+            font-size: 14px;
+            line-height: 26px;
+            &:hover{
+                box-shadow: none;
+                color: $white;
+            }
+        }
+
+        &--green{
+            background-color: $nalichie;
+            margin: 0 0px 0 15px;
+
+        }
+
+        @include breakpoint($mobile-74){
+            &--bottom{
+                max-width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+
+            }
+        }
+
+        &--green{
+            background-color: $nalichie;
+            margin: 0 0px 0 15px;
+
+        }
+
+        @include breakpoint($mobile-56){
+            &--green{
+                margin: 15px 0 0 0;
+                font-size: 14px;
+            }
+        }
+}
+
+.btn-hidden{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 50px;
+    max-width: 414px;
+    padding: 2px 0;
+    border: 0;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+
+    background-color: $yel;
+    border-radius: $bor3px;
+
+    transition: all .3s;
+
+    &:hover{
+        box-shadow: $shadbtn;
+        color: $white;
+        background-color: #ce8e10;
+    }
+}
+
+//catalog
+
+.btn-catalog__more{
+    width: 100%;
+    max-width: 326px;
+    border: 2px $yel solid;
+    color: $yel;
+    margin: 0;
+
+    background-color: $white;
+
+    &:hover{
+        background-color: $yel;
+        color: $white;
+    }
+}
+
+//кноака вверх
+
+#button {
+    display: inline-block;
+    background-color: $yel;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1001110;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #button {
+    display: inline-block;
+    background-color: $yel;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1001110;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }

@@ -1,0 +1,48 @@
+.stocks {
+
+}
+
+.stocks__body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include breakpoint($tablet-620){
+        max-width: 810px;
+        margin: 0 auto;
+    }
+
+    @include breakpoint($tablet-bp){
+        justify-content: center;
+
+    }
+
+}
+
+
+.stocks__body-hidden{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.stocks__item {
+    width: 100%;
+    max-width: 335px;
+    height: auto;
+    padding: 0 20px 29px 20px;
+    margin: 0 auto 30px auto;
+
+    box-shadow: $blog2;
+    transition: all .3s;
+
+    &:hover{
+        box-shadow: $blog1;
+        transform: scale(1.02);
+    }
+}
+
+

@@ -1,0 +1,46 @@
+
+.breadcrumbs{
+    margin: 30px 0;
+}
+
+
+.breadcrums__list {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: $heatitle;
+
+    @include breakpoint($tablet-bp){
+        margin-bottom: 10px;
+       }
+
+}
+
+.breadcrums__link {
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+
+
+    &::after{
+        content: "\276F";
+        font-size: 12px;
+        margin: 0 15px;
+
+    }
+
+
+
+}
+
+.breadcrums__current {
+
+    color: $yel;
+    margin-right: 15px;
+}

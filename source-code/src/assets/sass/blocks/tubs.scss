@@ -1,0 +1,323 @@
+.tabs {
+    max-width: 1590px;
+    background: $fon2;
+    box-shadow: $blog2;
+    padding: 30px;
+    margin-bottom: 120px;
+
+}
+
+.tabs__nav {
+    display: flex;
+    position: relative;
+
+    &::after{
+        display: block;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: rgba(20, 20, 20, 0.15);
+
+        position: absolute;
+        bottom: 29px;
+        left: 0;
+    }
+
+
+    @include breakpoint($tablet-bp){
+        flex-direction: column;
+
+     }
+}
+
+.tabs__nav-btn {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: rgba(20, 20, 20, 0.5);
+
+    background: $fon2;
+    border: 0;
+    cursor: pointer;
+
+    &--tubs{
+        background-color: $heatitle;
+        color: $white;
+        padding: 12px 30px;
+        border-radius: $bor3px;
+
+        &:hover{
+            background-color: $heatitle;
+        }
+
+
+    @include breakpoint($tablet-155){
+        margin: 0 auto;
+        font-size: 15px;
+
+     }
+    }
+
+    @include breakpoint($tablet-bp){
+        margin-right: 0;
+        margin-left: 0;
+     }
+
+}
+
+.tabs__nav-btn:last-child {
+    border-right: none;
+}
+
+.tabs__nav-btn:hover {
+
+}
+
+.tabs__nav-btn.active {
+    border-bottom: 1px solid $yel;
+    color: $heatitle;
+    background: $fon2;
+}
+
+.tabs__content {
+    background: $fon2;
+
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: $heatitle;
+}
+
+.tabs__item {
+    display: none;
+
+}
+
+.tabs__item-flex{
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint($tablet-155){
+       flex-direction: column;
+       text-align: center;
+
+     }
+}
+
+.tabs__item-text{
+    margin-bottom: 15px;
+}
+
+.tabs__item.active {
+    display: block;
+}
+
+
+.tabs__item-table{
+    display: flex;
+
+    @include breakpoint($tablet-bp){
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       max-width: 300px;
+       margin: 0 auto;
+
+     }
+
+     @include breakpoint($mobile-br){
+         font-size: 14px;
+
+      }
+}
+
+.tabs__item-title {
+    padding-bottom: 20px;
+    padding-right: 80px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: $heatitle;
+
+    @include breakpoint($mobile-br){
+        font-size: 14px;
+        padding-right: 10px;
+     }
+
+}
+
+.tabs__item-subtitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    /* identical to box height */
+
+    color: $heatitle;
+}
+
+
+
+.tabs__item-one{
+    width: 100%;
+    max-width: 437px;
+
+
+    margin: 0 0 15px 15px;
+    padding-right: 15px;
+
+}
+
+.tabs__item-two {
+    width: 100%;
+    max-width: 537px;
+
+
+    margin: 0 0 15px 15px;
+    padding-right: 15px;
+
+}
+
+.tabs__item-thee {
+    width: 100%;
+    max-width: 537px;
+
+
+    margin: 0 0 15px 15px;
+    padding-right: 15px;
+}
+
+.tabs__form-flex{
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint($tablet-bp){
+      display: block;
+     }
+
+}
+
+//form
+
+.tabs__item-feedback{
+    margin-bottom: 20px;
+}
+
+
+.tabs__form-input{
+    width: 100%;
+
+    border: 1px solid rgba(20, 20, 20, 0.15);
+    padding: 20px;
+    outline: none;
+    background-color: $fon;
+}
+
+.tabs__form-label{
+    width: 100%;
+}
+
+
+.tabs__form-group {
+    display: flex;
+    margin-bottom: 20px;
+    outline: none;
+    margin-right: 30px;
+
+}
+
+.tabs__form-pluses {
+
+    position: relative;
+    padding: 20px;
+
+    background-color: $nalichie;
+    color: $white;
+    outline: none;
+
+    &::before{
+
+        display: block;
+        content: "+";
+         color: $white; ;
+         font-size: 25px;
+       position: absolute;
+       left: 47px;
+       top: 40px;
+       z-index: 100;
+    }
+
+    @include breakpoint($mobile-32){
+        padding: 0px;
+       }
+
+}
+
+.tabs__form-minuses {
+    position: relative;
+    padding: 20px;
+
+    background-color: $nonal;
+    color: $white;
+
+    &::after{
+
+        display: block;
+        content: "-";
+         color: $white; ;
+         font-size: 25px;
+
+       position: absolute;
+       left: 56px;
+       top: 40px;
+       z-index: 100;
+    }
+    @include breakpoint($mobile-32){
+        padding: 0px;
+       }
+
+}
+
+.tabs__form-control{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+
+    border: 1px solid rgba(20, 20, 20, 0.15);
+    outline: none;
+    resize: none;
+    background-color: $fon;
+
+    @include breakpoint($mobile-32){
+        padding: 0px;
+       }
+}
+
+.tabs__item-center{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.tabs__item-delevery{
+    @include breakpoint($mobile-32){
+        font-size: 12px;
+       }
+}
